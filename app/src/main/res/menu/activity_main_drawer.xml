@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!--设置drawerLayout和actionbar的菜单-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_city_manage"
+            android:icon="@drawable/ic_menu_city_manage"
+            android:onClick="onClickEvents"
+            android:title="@string/str_ciry_manage" />
+        <item
+            android:id="@+id/nav_notepad"
+            android:icon="@drawable/ic_menu_notepad"
+            android:onClick="onClickEvents"
+            android:title="@string/str_notepad" />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_setting"
+            android:onClick="onClickEvents"
+            android:title="@string/str_setting" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_about"
+            android:onClick="onClickEvents"
+            android:title="@string/str_about" />
+    </group>
+
+
+</menu>

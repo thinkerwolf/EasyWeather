@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><!--主界面天气信息-->
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_fragment_swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <org.lgd.view.ObserverScrollView
+        android:id="@+id/id_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/id_totle_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/id_fullscreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_text_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="--"
+                    android:textColor="@color/colorDayWhite"
+                    android:textSize="@dimen/fragment_main_tempnum_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/id_text_weather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorDayWhite"
+                        android:textSize="@dimen/fragment_main_weather_size" />
+
+                    <TextView
+                        android:id="@+id/id_text_totle_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:contentDescription="今天的最高温度和最低温度"
+                        android:text="--/--"
+                        android:textColor="@color/colorDayWhite"
+                        android:textSize="@dimen/fragment_main_weather_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <org.lgd.view.WeekWeatherResumeView
+                android:id="@+id/id_weekweather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            </org.lgd.view.WeekWeatherResumeView>
+            <org.lgd.view.TempTrendView
+                android:id="@+id/id_tempTrendView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:pointColor="#ffffff"
+                app:tempColor="#ffffff"
+                app:tempSize="11sp" />
+            <org.lgd.view.SunRiseDownCircleView
+                android:id="@+id/id_sunRiseDownView"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                app:circleWidth="3dp"
+                app:downtime="18:00"
+                app:risetime="06:00"
+                app:tempSize="50sp"
+                app:timeSize="11sp" />
+            <include layout="@layout/fragment_main_other_info" />
+            <include layout="@layout/fragment_main_air_condition" />
+            <include layout="@layout/fragment_main_life_index" />
+        </LinearLayout>
+    </org.lgd.view.ObserverScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
+

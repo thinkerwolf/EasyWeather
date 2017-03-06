@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><!--城市管理每个Item的布局--><!--长按能进行拖动进行排序
+同时更新后台数据库
+向左滑动删除相应的城市-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cities_list_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/list_item_padding">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/cities_list_item_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_location_white" />
+
+            <TextView
+                android:id="@+id/cities_list_item_cityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_distance"
+                android:text="--"
+                android:textColor="@color/colorDayWhite"
+                android:textSize="@dimen/status_bar_textsize" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cities_list_item_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_distance"
+            android:layout_marginTop="@dimen/normal_distance"
+            android:text="-℃"
+            android:textColor="@color/colorDayWhite"
+            android:textSize="@dimen/fragment_main_weather_size" />
+
+        <TextView
+            android:id="@+id/cities_list_item_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_distance"
+            android:layout_marginTop="@dimen/normal_distance"
+            android:text="- -°~-℃"
+            android:textColor="@color/colorDayWhite" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/cities_list_item_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clear_input_normal" />
+</LinearLayout>

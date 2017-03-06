@@ -1,0 +1,9 @@
+﻿[{"label":"北京Beijing010","name":"北京","pinyin":"Beijing","zip":"010"},{"label":"上海Shanghai021","name":"上海","pinyin":"Shanghai","zip":"021"}, {"label":"天津Tianjin022","name":"天津","pinyin":"Tianjin","zip":"022"},{"label":"重庆Chongqing023","name":"重庆","pinyin":"Chongqing","zip":"023"},
+{"label":"南京Nanjing025","name":"南京","pinyin":"Nanjing","zip":"025"},
+{"label":"苏州Suzhou0512","name":"苏州","pinyin":"Suzhou","zip":"0512"}, 
+{"label":"西安Xian029","name":"西安","pinyin":"Xian","zip":"029"},
+{"label":"武汉Wuhan027","name":"武汉","pinyin":"Wuhan","zip":"027"},
+{"label":"杭州Hangzhou0571","name":"杭州","pinyin":"Hangzhou","zip":"0571"}, 
+{"label":"成都Chengdu028","name":"成都","pinyin":"Chengdu","zip":"028"}, 
+{"label":"广州Guangzhou020","name":"广州","pinyin":"Guangzhou","zip":"020"},
+{"label":"深圳Shenzhen0755","name":"深圳","pinyin":"Shenzhen","zip":"0755"}]

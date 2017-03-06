@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?> <!--生活指数的每一个模块-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/life_index_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_sport_index" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/life_index_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动指数"
+            android:textColor="@color/colorDayWhite"
+            android:textSize="@dimen/fragment_main_index_small_text" />
+
+        <TextView
+            android:id="@+id/life_index_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="较适宜"
+            android:textColor="@color/colorDayWhite"
+            android:textSize="@dimen/fragment_main_index_big_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

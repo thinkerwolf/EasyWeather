@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><!--每天的天气概括 包括：日期  星期几  和  天气图标 添加到一个-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/id_dayOfWeek_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="4/1"
+        android:textColor="@color/colorDayWhite" />
+
+    <TextView
+        android:id="@+id/id_dayOfWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="周五"
+        android:textColor="@color/colorDayWhite"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="白天"
+        android:textColor="@color/colorDayWhite" />
+
+    <ImageView
+        android:id="@+id/id_day_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/sunny" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="夜晚"
+        android:textColor="@color/colorDayWhite" />
+
+    <ImageView
+        android:id="@+id/id_night_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/raindy_small" />
+
+</LinearLayout>

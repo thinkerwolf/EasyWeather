@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_wati_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_shade_color"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_dialog_wait"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/normal_distance"
+        android:paddingLeft="@dimen/action_bar_margin"
+        android:paddingRight="@dimen/action_bar_margin"
+        android:paddingTop="@dimen/normal_distance">
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="@dimen/list_item_padding"
+            android:layout_height="@dimen/list_item_padding" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="正在创建分享，请等待"
+            android:textColor="@color/colorDayWhite" />
+    </LinearLayout>
+</FrameLayout>

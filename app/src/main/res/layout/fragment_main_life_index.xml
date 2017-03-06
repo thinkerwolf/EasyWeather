@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?> <!--生活指数模块-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fragment_main_index_height"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/list_item_padding">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_recycle_life_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/id_linear_life_index_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/fragment_main_index_detail_padding"
+        android:paddingRight="@dimen/fragment_main_index_detail_padding"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/id_detail_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_sport_index" />
+
+            <TextView
+                android:id="@+id/id_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="运动指数"
+                android:textColor="@color/colorDayWhite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=" — "
+                android:textColor="@color/colorDayWhite" />
+
+            <TextView
+                android:id="@+id/id_detail_info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="较不宜"
+                android:textColor="@color/colorDayWhite" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id_detail_suggesstion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/list_item_padding"
+            android:text="天气较好，但风力较大，推荐您进行室内运动，若在户外运动请注意避风保暖。"
+            android:textColor="@color/colorTextDetailSuggess" />
+    </LinearLayout>
+</FrameLayout>

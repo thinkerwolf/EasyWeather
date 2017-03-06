@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+
+
+    <dimen name="normal_distance">6dp</dimen>
+    <dimen name="list_item_padding">20dp</dimen>
+    <dimen name="tiny_distance_size">3dp</dimen>
+
+    <dimen name="action_bar_margin">23dp</dimen>
+    <dimen name="fragment_main_index_big_text">14.5sp</dimen>
+    <dimen name="fragment_main_index_small_text">11.5sp</dimen>
+    <dimen name="clear_edit_text_size">14.6sp</dimen>
+    <dimen name="status_bar_textsize">18sp</dimen>
+
+    <dimen name="fragment_main_tempnum_size">68sp</dimen>
+    <dimen name="fragment_main_weather_size">20sp</dimen>
+
+    <dimen name="top_view_hot_city_size">16.5sp</dimen>
+
+    <dimen name="fragment_main_index_height">170dp</dimen>
+    <dimen name="fragment_main_index_detail_padding">30dp</dimen>
+    <dimen name="fragment_main_index_detail_padding_bottom">15dp</dimen>
+
+    <dimen name="fragment_add_text_touch_letter_size">40sp</dimen>
+
+    <dimen name="padding_clear_text">8dp</dimen>
+</resources>

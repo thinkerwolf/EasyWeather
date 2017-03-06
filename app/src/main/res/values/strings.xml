@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">简约天气</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+
+    <string name="str_ciry_manage">城市管理</string>
+
+    <string name="hot_city">热门城市</string>
+
+    <string name="str_notepad">记事本</string>
+    <string name="str_setting">设置</string>
+    <string name="str_about">关于</string>
+    <string name="str_data_source">天气数据来源于阿凡达数据网</string>
+    <string name="str_copyright">Copyrightⓒ2016简约天气 保留所有权利</string>
+</resources>

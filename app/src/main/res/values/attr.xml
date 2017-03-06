@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><!--自定义View空间的属性-->
+<resources>
+    <attr name="risetime" format="string" />
+    <attr name="downtime" format="string" />
+    <attr name="tempeture" format="integer" />
+    <attr name="tempSize" format="dimension" />           <!--现在温度显示大小-->
+    <attr name="timeSize" format="dimension" />
+    <attr name="circleWidth" format="dimension" />
+
+
+    <attr name="tempColor" format="color" />
+    <attr name="pointSize" format="dimension" />
+    <attr name="pointColor" format="color" />
+    <attr name="trendColor" format="color" />
+
+    <!--为SunRiseDownCircleView设置相应的属性-->
+    <declare-styleable name="SunRiseDownCircleView">
+        <attr name="risetime" />
+        <attr name="downtime" />
+        <attr name="tempeture" />
+        <attr name="tempSize" />
+        <attr name="timeSize" />
+        <attr name="circleWidth" />
+    </declare-styleable>
+
+    <!--为温度曲线图自定义的View-->
+    <declare-styleable name="TempTrendView">
+        <attr name="tempSize" />  <!--温度字体大小-->
+        <attr name="tempColor" /> <!--温度颜色-->
+        <attr name="pointSize" /> <!--温度点的宽度-->
+        <attr name="pointColor" /> <!--温度点的颜色-->
+        <attr name="trendColor" /> <!--中间填充颜色-->
+    </declare-styleable>
+
+
+    <!--为右侧字母选择器定义的的属性-->
+    <declare-styleable name="SideBar">
+        <attr name="sidebar_bg" format="color" /> <!--背景颜色-->
+        <attr name="sidebar_char_color_normal" format="color" /> <!--字母列表正常颜色-->
+        <attr name="sidebar_char_size" format="dimension" /> <!--字母列表字母大小-->
+        <attr name="sidebar_char_color_pressed" format="color" /> <!--字母列表按压颜色-->
+        <attr name="peek_char_color" format="color" /> <!--点击选中的字体颜色-->
+        <attr name="peek_char_size" format="dimension" /> <!--点击选中字体大小-->
+    </declare-styleable>
+
+</resources>

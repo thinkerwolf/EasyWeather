@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">高德定位V2Demo</string>
+    <string name="title_main">高德定位SDK功能展示</string>
+    <string name="title_battery_saving">低功耗模式功能展示</string>
+    <string name="title_device_sensors">仅设备模式功能展示</string>
+    <string name="title_hight_accuracy">高精度模式功能展示</string>
+    <string name="title_lastLocation">最后位置功能展示</string>
+    <string name="title_geoFenceAlert">地理围栏功能展示</string>
+    <string name="title_assistantLocation">H5辅助定位展示</string>
+    <string name="title_alarmCPU">定时唤起CPU示例</string>
+    
+    <string name="battery_saving">低功耗模式</string>
+    <string name="battery_saving_dec">仅使用高德网络定位，耗电量最低</string>
+    <string name="battery_saving_info">低功耗模式</string>
+    
+    <string name="device_sensors">仅设备模式</string>
+    <string name="device_sensors_dec">无需网络连接，使用手机GPS模块定位，室外定位精度高，室内定位成功率低，耗电量高</string>
+    
+    <string name="hight_accuracy">高精度模式</string>
+    <string name="hight_accuracy_dec">同时使用GPS和高德网络定位，优先返回精度高的定位结果，定位精度高，耗电量低</string>
+    
+    <string name="lastLocation">最后位置</string>
+	<string name="lastLocation_dec">获取最后一次定位的位置，此位置是一个历史位置</string>
+	
+    <string name="geoFenceAlert">地理围栏</string>
+    <string name="geoFenceAlert_dec">可以设置对进入或离开区域进行提醒</string>
+    
+    <string name="assistantLocation">H5辅助定位</string>
+    <string name="assistantLocation_dec">展示H5辅助定位功能</string>
+    
+    <string name="alarmCPU">定时唤起cpu</string>
+	<string name="alarmCPU_dec">通过一个闹钟程序后台定时唤起cpu</string>
+    
+    <string name="location_contiue">持续定位</string>
+	<string name="location_once">单次定位</string>
+	<string name="interval">定位周期</string>
+	<string name="millsecond">毫秒</string>
+	<string name="needAddress">逆地理编码</string>
+	<string name="gpsFirst">GPS优先</string>
+	
+	<string name="alarmInterval">唤醒周期</string>
+	<string name="second">秒</string>
+	
+	<string name="startLocation">开始定位</string>
+	<string name="stopLocation">停止定位</string>
+
+	
+	<string name="getLastLocation">获取最后位置</string>
+	
+	<string name="fenceRadius">围栏半径</string>
+	<string name="meter">米</string>
+	<string name="alertIn">进入提醒</string>
+	<string name="alertOut">离开提醒</string>
+	
+	<string name="addFence">添加围栏</string>
+	<string name="removeFence">移除围栏</string>
+	
+	<string name="startAssistantLocation">启动H5辅助定位</string>
+	<string name="stopAssistantLocation">停止H5辅助定位</string>
+	<string name="urlLocation">浏览器定位</string>
+	<string name="assistantLocationInfo">辅助定位已经启动，请点击模拟浏览器请求或者在浏览器中输入http://127.0.0.1:43689/进行测试</string>
+	
+	<string name="defaultInteval">1000</string>
+</resources>

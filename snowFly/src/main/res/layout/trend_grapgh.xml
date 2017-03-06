@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_rain_night"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+
+        <LinearLayout
+            android:id="@+id/llayout"
+            android:layout_width="fill_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical" >
+
+            <com.icer.snow.TrendGraphView
+                android:id="@+id/trendGraphView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp" >
+                </com.icer.snow.TrendGraphView>
+        </LinearLayout>
+        
+
+</LinearLayout>

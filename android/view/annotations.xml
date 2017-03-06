@@ -1,0 +1,5 @@
+<root>
+  <item name='android.view.SurfaceHolder SURFACE_TYPE_PUSH_BUFFERS'>
+    <annotation name='java.lang.annotation.Deprecated' />
+  </item>
+</root>

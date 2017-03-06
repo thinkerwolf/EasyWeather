@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!--顶栏RecyclerView的Item-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:background="@drawable/bg_hot_city"
+    android:clickable="true"
+    android:paddingBottom="@dimen/tiny_distance_size"
+    android:paddingLeft="@dimen/fragment_main_index_big_text"
+    android:paddingRight="@dimen/fragment_main_index_big_text"
+    android:paddingTop="@dimen/tiny_distance_size">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/id_top_hot_item_cityname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="北京"
+        android:textColor="@color/colorDayWhite">
+
+    </TextView>
+</FrameLayout>

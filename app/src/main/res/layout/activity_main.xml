@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_drawlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="org.lgd.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/id_contentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--天气动画部分-->
+        <FrameLayout
+            android:id="@+id/id_weather_amination"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/sun_day_backcolor">
+
+            <SurfaceView
+                android:id="@+id/id_weather_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />
+            <!--动画遮罩-->
+            <FrameLayout
+                android:id="@+id/id_weather_vedio_shade"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0"></FrameLayout>
+        </FrameLayout>
+        <!--天气信息主体内容-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/tiny_distance_size">
+
+                    <TextView
+                        android:id="@+id/id_main_city_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="北京"
+                        android:textColor="@color/colorDayWhite"
+                        android:textSize="@dimen/status_bar_textsize" />
+
+                    <TextView
+                        android:id="@+id/id_titlebar_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normal_distance"
+                        android:gravity="center"
+                        android:text="05/14"
+                        android:textColor="@color/colorDayWhite"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/id_titlebar_week"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="星期六"
+                        android:textColor="@color/colorDayWhite"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/id_imgbtn_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/action_bar_margin"
+                        android:background="@drawable/share_light" />
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/id_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+        <include
+            layout="@layout/wait_dialog" />
+    </FrameLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/activity_main_drawer" />
+</android.support.v4.widget.DrawerLayout>

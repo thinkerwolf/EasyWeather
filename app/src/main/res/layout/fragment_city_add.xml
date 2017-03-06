@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_city_add_current_letter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/current_letter_color_bg"
+        android:paddingBottom="3dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="3dp"
+        android:text="A"
+        android:textColor="@color/colorDayWhite"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/id_listview_allcity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/id_city_add_touch_letter"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_city_add_touch_letter"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/colorDayWhite"
+        android:textSize="@dimen/fragment_add_text_touch_letter_size"
+        android:visibility="gone" />
+
+    <org.lgd.view.SideBar
+        android:id="@+id/id_city_add_sidebar"
+        android:layout_width="20dp"
+        android:layout_height="500dp"
+        android:layout_gravity="right|center_vertical" />
+</FrameLayout>

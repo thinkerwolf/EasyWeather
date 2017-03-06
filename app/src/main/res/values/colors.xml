@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--状态栏颜色资源-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorDayWhite">#F9FEEA</color>
+    <color name="colorTextDetailSuggess">#FFF4F4F4</color>
+    <!--空气污染状况颜色--> <!--夜晚时三套配色没问题-->
+    <color name="good_air">#34e187</color>
+    <color name="light_pollution">#e9a63b</color>
+    <color name="heavy_pollution">#dc3930</color>
+
+    <!--天气动画整体底色配色资源-->
+    <color name="sun_day_backcolor">#509bd1</color>
+    <color name="sun_night_backcolor">#0b233e</color>
+    <color name="city_choose_bg">#273339</color>
+
+    <color name="city_add_letter_color">#FFDEDEDE</color>
+
+    <color name="current_letter_color_bg">#FF4AB0E2</color>
+
+    <color name="dialog_bg_colot">#2A2E31</color>
+
+    <color name="dialog_shade_color">#922A2E31</color>
+
+
+    <color name="clear_edit_color">#d513181b</color>
+</resources>

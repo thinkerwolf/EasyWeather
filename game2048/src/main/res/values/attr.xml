@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <attr name="number" format="string"/> <!--小滑块数字-->
+
+    <attr name="numberColor" format="color"/> <!--数字颜色-->
+
+    <attr name="backColor" format="color"/>
+
+
+
+    <declare-styleable name="SlideBlockView">
+        <attr name="number"/> <!--小滑块数字-->
+        <attr name="numberColor"/> <!--数字颜色-->
+        <attr name="backColor"/> <!--背景颜色-->
+        <attr name="numberSize" format="dimension"></attr><!--numsize-->
+        <attr name="dx" format="dimension"></attr> <!--圆弧宽-->
+        <attr name="dy" format="dimension"></attr> <!--圆弧宽-->
+    </declare-styleable>
+
+</resources>

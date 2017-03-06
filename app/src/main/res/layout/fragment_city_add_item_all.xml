@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_city_add_item_currentLetter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/current_letter_color_bg"
+        android:paddingBottom="4dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="4dp"
+        android:text="A"
+        android:textColor="@color/city_add_letter_color" />
+
+    <TextView
+        android:id="@+id/id_city_add_item_cityname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fragment_main_index_detail_padding_bottom"
+        android:text="阿里"
+        android:textColor="@color/colorDayWhite"
+        android:textSize="@dimen/status_bar_textsize" />
+</LinearLayout>
